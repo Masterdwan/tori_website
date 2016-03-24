@@ -21,7 +21,7 @@ module.exports = function() {
           }
 
           if(callback){
-            callback(result.rows);
+            callback(result.rows);  //calls back the rows from the query
           }
           return;
         });

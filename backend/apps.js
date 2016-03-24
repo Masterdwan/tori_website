@@ -1,5 +1,5 @@
 var express = require('express');
- var database = require('./database.js');
+var database = require('./database.js')
 var app = express();
 var port = process.env.PORT || 1337;
 //Set up to render the html correctly from the html folder
@@ -26,8 +26,7 @@ app.get('/trainList2', function(req,res){
 
 app.get('/getTrains', function(req,res){
   console.log('app / getTrains requested');
- 
-database.executeQuery("SELECT * FROM trains", function(results) {
+ database.executeQuery("SELECT * FROM trains", function(results) {
       res.send(results);
 
 //this is bringing back JSON not rendering HTML

@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
-   getStub('/getTrains', function(results){
+ //  getStub('/getTrains', function(results){
+          $.get('/getTrains', function(results){
          var tableString = "<tr><th>Train Name</th><th>In Service</th><th>Number of Available Cars</th></tr>";
          $.each(results, function(index, rowObject){
       tableString += "<tr><td>" + rowObject.name + "</td>" +
