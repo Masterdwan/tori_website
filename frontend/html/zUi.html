@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+ <script type="text/javascript" src="./zUi"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+ <div class="dropdown">
+     
+     <textarea id="mytext"></textarea>
+   <form class="form-group" id="addEmployeeForm">
+<select id="dropdown">
+    <option value="">User List</option>
+    <option value="text1">Alan Tang</option>
+    <option value="text2">Orline Cacayan</option>
+    <option value="text3">Kendall Zettmeier</option>
+    <option value="text4">Rich Rousseau</option>
+    <option value="text4">Scot Wissel **Admin**</option>
+    <option value="text5">Jacqueline Dukes</option>
+</select>
+     <script type="text/javascript">
+    var mytextbox = document.getElementById('mytext');
+    var mydropdown = document.getElementById('dropdown-menu');
+
+    mydropdown.onchange = function(){
+          mytextbox.value = mytextbox.value  + this.value; //to appened
+         //mytextbox.innerHTML = this.value;
+    };
+    $('textarea').autoResize();
+</script>
+</form>
+<style>
+
+textarea {
+ 
+  border: 1px solid #888; 
+}
+    
+</style>
+<form class="form-group" id="addEmployeeForm">
+
+ <div class="input">ID <input type="text" id="id" maxlength="100"/></div>
+  <div class="input">Name <input type="text" id="name" maxlength="100"/></div>
+   <div class="input">Email <input type="text" id="email" maxlength="100"/></div>
+
+
+<div>
+                <input type="submit" class="btn btn-default"/>
+            </div>
+            </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class=" container">
+    <button> Lets get Started</button>
+</div>
+
+</body>
+</html>
