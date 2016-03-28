@@ -2,11 +2,11 @@
 
 $(document).ready(function(){
 
-$.get('/zUi', function(results){
+$.get('/getzUi', function(results){
 
   $('#addEmployeeForm').submit(function(){
 
-    $.post('/zUi', {
+    $.post('/getzUi', {
       id: $('#id').val(),
       name: $('#name').val(),
       email: $('#email').val()
