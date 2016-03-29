@@ -15,14 +15,23 @@ $(document).ready(function(){
     $.each(results, function(index, rowObject){
       tableString += "<tr><td>" + rowObject.trng_reqst_nbr + "</td>" +
         "<td>" + rowObject.trng_cors_nm + "</td>" +
-        "<td>" + rowObject.trng_cors_cost + "</td></tr><tr><td><input type='button' name='approve'  value='approve' onclick='selectAll()'></td>"
-+ "<td><input type='button' name='disapprove' value='disapprove' onclick='selectAll()'></td>";
+        "<td>" + rowObject.trng_cors_cost + "</td></tr><tr><td><input id='approve' type='button' name='approve'  value='approve' onclick='approve()'></td>"
++ "<td><input id='reject'' type='button' name='reject' value='reject' onclick='reject()'></td>";
 
     });
     $('#aLanding_table').html(tableString);
   });
 
 });
+
+var approve =  function(){
+   $('#approve').fadeOut().remove();
+
+}
+function postpone( fun )
+{
+  window.setTimeout(fun,0);
+}
 
 
 function getStub(endpoint, callback){
