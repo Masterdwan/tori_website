@@ -4,10 +4,10 @@ $(document).ready(function(){
 
   $('#addEmployeeForm').submit(function(){
 
-    $.post('/getzUi', {
+    $.post('/addzUi', {
       id: $('#id').val(),
-      name: $('#name').is(':checked'),
-      email: $('#email`').val()
+      name: $('#name').val(),
+      email: $('#email').val()
     });
 
     return false;
