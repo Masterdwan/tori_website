@@ -1,17 +1,3 @@
--- in cloud 9, start the postgres service:
--- sudo service postgresql start
-
--- connect:
--- sudo sudo -u postgres psql
-
--- get to the filesystem while still logged in as super user
--- \! 
-
--- run this file
--- psql -f trains.sql
-
-<<<<<<< HEAD
-
 create database trainrequest;
 
 \c trainrequest;
@@ -75,23 +61,3 @@ insert into TTX_Empl_Trng_Reqst (Trng_Reqst_Nbr, Cntct_Email_Addr, Cntct_Email_I
 insert into TTX_Empl_Trng_Reqst (Trng_Reqst_Nbr, Cntct_Email_Addr, Cntct_Email_Immed_Supv_Addr, Cntct_Email_Dept_Hd_Addr, Trng_Cors_Id, Trng_Cors_Nm, Trng_Cors_Nbr, Trng_Cors_Strt_Dt, Trng_Cors_End_Dt, Trng_Cors_Totl_Nbr_Hrs, Trng_Cors_Cost, Trng_Cors_Rltd_Exp_Amt, Trng_Cors_Locn, Trng_Cors_Typ, Trng_Reqst_Cors_Bnft_Txt, Trng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg, Trng_Reqst_VP_Apvl_Flg, Trng_Cors_Compl_Flg, Trng_Cors_Budg_Pln_Flg, Trng_Cors_Not_Budg_Pln_Rsn_Txt, Trng_Cors_Not_Compl_Rsn_Txt, Trng_Reqst_Fwd_Actg_Paym_Flg, Trng_Reqst_Paym_Recip_Email_Addr, Trng_Reqst_Rejt_Rsn_Txt, Trng_Reqst_Paym_Reqst_Dt, Trng_Reqst_Paym_Due_Dt, Trng_Reqst_Paym_Chk_Amt, Trng_Reqst_Paym_Mail_Flg, Vndr_Nbr, Vndr_Nm, Vndr_Mail_Addr, Vndr_Mail_Addr_Ln_2, Vndr_Mail_City, Vndr_Mail_St, Vndr_Mail_Zip_Cd, Vndr_Mail_Cntry, Trng_Reqst_Cost_Ctr, Trng_Reqst_GL_Acct_Nbr, Crtd_Dt, Lst_Updt_Dt, Lst_Updt_Id) values('20160009', 'KENDALL.ZETTLMEIER@TTX.COM', 'SCOTT.WISSEL@TTX.COM', 'PURNESH.RUSTAGI@TTX.COM', '', 'DevIntersections 2016', '0', '4/16/2016 0:00:00', '4/22/2016 0:00:00', '48', '2793', '1500', 'Lake Buena Vista, FL', 'Conference', 'This conference is going to have sessions and workshops discussing new javascript tools such as AngularJS 2 and Nativescript in order to build cross-platform applications using AngularJS.', 'Y', 'Y', 'Y', '', 'Y', '', '', 'N', '', '', '12/31/1899 0:00:00', '12/31/1899 0:00:00', '0', 'N', '', 'DevIntersections 2016', '', '', '', '', '', '', '', '464000', '1/28/2016 8:31:30', '1/29/2016 16:11:43', 'MISBGS');
 insert into TTX_Empl_Trng_Reqst (Trng_Reqst_Nbr, Cntct_Email_Addr, Cntct_Email_Immed_Supv_Addr, Cntct_Email_Dept_Hd_Addr, Trng_Cors_Id, Trng_Cors_Nm, Trng_Cors_Nbr, Trng_Cors_Strt_Dt, Trng_Cors_End_Dt, Trng_Cors_Totl_Nbr_Hrs, Trng_Cors_Cost, Trng_Cors_Rltd_Exp_Amt, Trng_Cors_Locn, Trng_Cors_Typ, Trng_Reqst_Cors_Bnft_Txt, Trng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg, Trng_Reqst_VP_Apvl_Flg, Trng_Cors_Compl_Flg, Trng_Cors_Budg_Pln_Flg, Trng_Cors_Not_Budg_Pln_Rsn_Txt, Trng_Cors_Not_Compl_Rsn_Txt, Trng_Reqst_Fwd_Actg_Paym_Flg, Trng_Reqst_Paym_Recip_Email_Addr, Trng_Reqst_Rejt_Rsn_Txt, Trng_Reqst_Paym_Reqst_Dt, Trng_Reqst_Paym_Due_Dt, Trng_Reqst_Paym_Chk_Amt, Trng_Reqst_Paym_Mail_Flg, Vndr_Nbr, Vndr_Nm, Vndr_Mail_Addr, Vndr_Mail_Addr_Ln_2, Vndr_Mail_City, Vndr_Mail_St, Vndr_Mail_Zip_Cd, Vndr_Mail_Cntry, Trng_Reqst_Cost_Ctr, Trng_Reqst_GL_Acct_Nbr, Crtd_Dt, Lst_Updt_Dt, Lst_Updt_Id) values('20160010', 'JACQUELINE.DUKES@TTX.COM', 'SCOTT.WISSEL@TTX.COM', 'PURNESH.RUSTAGI@TTX.COM', '', 'Anglebrackets 2016', '0', '4/16/2016 0:00:00', '4/22/2016 0:00:00', '48', '2793', '1500', 'Orlando, FL 32830', 'Conference', 'Learn about open source frameworks relevant to the Emerging Technologies team', 'P', 'Y', 'Y', '', 'Y', '', '', 'N', '', '', '12/31/1899 0:00:00', '12/31/1899 0:00:00', '0', 'N', '', 'Anglebrackets 2016', '', '', '', '', '', '', '', '464000', '1/28/2016 11:55:50', '1/29/2016 16:12:00', 'MISBGS');
 insert into TTX_Empl_Trng_Reqst (Trng_Reqst_Nbr, Cntct_Email_Addr, Cntct_Email_Immed_Supv_Addr, Cntct_Email_Dept_Hd_Addr, Trng_Cors_Id, Trng_Cors_Nm, Trng_Cors_Nbr, Trng_Cors_Strt_Dt, Trng_Cors_End_Dt, Trng_Cors_Totl_Nbr_Hrs, Trng_Cors_Cost, Trng_Cors_Rltd_Exp_Amt, Trng_Cors_Locn, Trng_Cors_Typ, Trng_Reqst_Cors_Bnft_Txt, Trng_Reqst_Immed_Supv_Apvl_Flg, Trng_Reqst_Dept_Hd_Apvl_Flg, Trng_Reqst_VP_Apvl_Flg, Trng_Cors_Compl_Flg, Trng_Cors_Budg_Pln_Flg, Trng_Cors_Not_Budg_Pln_Rsn_Txt, Trng_Cors_Not_Compl_Rsn_Txt, Trng_Reqst_Fwd_Actg_Paym_Flg, Trng_Reqst_Paym_Recip_Email_Addr, Trng_Reqst_Rejt_Rsn_Txt, Trng_Reqst_Paym_Reqst_Dt, Trng_Reqst_Paym_Due_Dt, Trng_Reqst_Paym_Chk_Amt, Trng_Reqst_Paym_Mail_Flg, Vndr_Nbr, Vndr_Nm, Vndr_Mail_Addr, Vndr_Mail_Addr_Ln_2, Vndr_Mail_City, Vndr_Mail_St, Vndr_Mail_Zip_Cd, Vndr_Mail_Cntry, Trng_Reqst_Cost_Ctr, Trng_Reqst_GL_Acct_Nbr, Crtd_Dt, Lst_Updt_Dt, Lst_Updt_Id) values('20160011', 'RICH.ROUSSEAU@TTX.COM', 'SCOTT.WISSEL@TTX.COM', 'PURNESH.RUSTAGI@TTX.COM', '', 'Angle Brackets', '0', '4/17/2016 0:00:00', '4/22/2016 0:00:00', '48', '2793', '1806', 'Orlando, FL', 'Conference', 'Training on many new technologies including Angular, Node, JavaScript which are integral to the new Emerging Technology Team.', 'Y', 'Y', 'Y', '', 'Y', '', '', 'N', '', '', '12/31/1899 0:00:00', '12/31/1899 0:00:00', '0', 'N', '', 'AngleBrackets/DevIntersection', '', '', '', '', '', '', '', '464000', '1/28/2016 12:30:24', '1/29/2016 16:11:26', 'MISBGS');
-=======
-create database nodeworkshop;
-
-\c nodeworkshop;
-
-create table if not exists trains (
-  id serial primary key,
-  name text,
-  inService boolean,
-  numberOfAvailable int
-);
-
-create role nodeuser with password '13149700' login;
-grant connect on database nodeworkshop to nodeuser;
-grant select on public.trains to nodeuser;
-
-insert into trains (name, inService, numberOfAvailable) values ('redline 813', true, '8');
-insert into trains (name, inService, numberOfAvailable) values ('redline 912', true, '10');
-insert into trains (name, inService, nu  ', true, '8');
->>>>>>> ab1aa2dc12b5b08bec94680ec6157f16a0b7331b

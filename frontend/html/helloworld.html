@@ -1,5 +1,6 @@
 <html>
     <head>
+<<<<<<< HEAD
         <link rel="stylesheet" href="../css/helloworld.css" type="text/css" />
     
      <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
@@ -22,3 +23,35 @@
         </body>
     
 </html>
+=======
+         <link rel="stylesheet" type="text/css" href="../css/helloworld.css">
+      <script src="https://code.jquery.com/jquery-1.12.2.js" integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY=" crossorigin="anonymous"></script>
+
+    </head>
+    <body>hello world from html file!
+    <button id="foo">
+        
+        foo
+    </button>
+    
+<button id ='bar'>
+    
+    bar
+</button>    
+    
+    <script>
+    
+   var message = "Spoon!";
+$( "#foo" ).bind( "click", {
+  msg: message
+}, function( event ) {
+  alert( event.data.msg );
+});
+message = "Not in the face!";
+$( "#bar" ).bind( "click", {
+  msg: message
+}, function( event ) {
+  alert( event.data.msg );
+});</script>!</body>
+</html>
+>>>>>>> ab1aa2dc12b5b08bec94680ec6157f16a0b7331b
