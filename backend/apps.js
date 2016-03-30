@@ -7,10 +7,28 @@ app.engine('html', require('ejs').renderFile);
 app.set('views', __dirname.replace('backend', 'frontend') + '/html');
 app.use(express.static(__dirname.replace('backend', 'frontend')));
 
+var bodyParser = require('body-parser');
+app.use( bodyParser.json() );
+app.use( bodyParser.urlencoded({ extended: true }) );
+
 app.get('/', function(req,res){
   console.log('app root/ requested');
   return res.status(200).send("hello worlds");
 });
+
+
+app.post('/addTrain', function(req,res){
+  var sql = `
+   INSERT INTO trains (name,inService,numberOfAvailable) 
+   VALUES ('${req.body.nameOfTrain}', '${req.body.inService}', '${req.body.availableTrains}');
+  `;
+   database.executeQuery(sql);
+  console.log('posted to /addTrain');
+  console.log(JSON.stringify(req.body));
+  return res.send("success");
+});
+
+
 
 app.get('/trainList', function(req,res){
   console.log('app / trains requested');
@@ -21,6 +39,7 @@ app.get('/trainList2', function(req,res){
   console.log('app / trains requested');
   return res.render('trainList2.html');
 });
+
 
 // This is my URL endpoint which is /get trains
 
@@ -34,9 +53,12 @@ app.get('/getTrains', function(req,res){
 });
 });
 
+
+
+
 app.get('/helloworld', function(req,res){
   console.log('app helloworld/ requested');
-  return res.rvender("trainList.html");
+  return res.render("helloworld.html");
 });
 
 app.listen(port, function(){
